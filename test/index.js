@@ -1,4 +1,4 @@
-const InspectExtension = require('./src');
+const InspectExtension = require('../src');
 const nunjucks = require('nunjucks');
 const should = require('should');
 

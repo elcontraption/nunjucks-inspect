@@ -13,8 +13,7 @@ var Inspect = function () {
     };
 
     this.run = function (context, input, callback) {
-        // var output = highlight.highlight('js', JSON.stringify(input));
-        return new nunjucks.runtime.SafeString('<pre><code>' + JSON.stringify(input) + '</code></pre>');
+        return new nunjucks.runtime.SafeString('<pre><code>' + JSON.stringify(input, null, 2) + '</code></pre>');
     };
 };
 
