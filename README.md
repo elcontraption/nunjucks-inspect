@@ -1,6 +1,11 @@
 # nunjucks-inspect
 An `inspect` tag for Nunjucks, to inspect an object's properties.
 
+## Installation
+```sh
+$ npm install nunjucks-inspect
+```
+
 ## Setup
 
 ```js
