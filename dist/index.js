@@ -1,6 +1,5 @@
 'use strict';
 
-var highlight = require('highlight.js');
 var nunjucks = require('nunjucks');
 
 var Inspect = function Inspect() {
@@ -16,8 +15,8 @@ var Inspect = function Inspect() {
     };
 
     this.run = function (context, input, callback) {
-        var output = highlight.highlight('js', JSON.stringify(input));
-        return new nunjucks.runtime.SafeString('<pre><code>' + output.value + '</code></pre>');
+        // var output = highlight.highlight('js', JSON.stringify(input));
+        return new nunjucks.runtime.SafeString('<pre><code>' + JSON.stringify(input) + '</code></pre>');
     };
 };
 
