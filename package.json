@@ -8,6 +8,15 @@
     "type": "git",
     "url": "https://github.com/elcontraption/nunjucks-inspect.git"
   },
+  "keywords": [
+    "nunjucks",
+    "tag",
+    "extension",
+    "debug",
+    "object",
+    "properties",
+    "print"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "test": "eslint src/index.js && mocha && gulp --gulpfile ./test/gulpfile.js",
