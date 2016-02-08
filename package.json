@@ -1,0 +1,29 @@
+{
+  "name": "nunjucks-inspect",
+  "description": "Adds `inspect` tag to Nunjucks to inspect an object's properties.",
+  "author": "Darin Reid <darin@elcontraption.com>",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elcontraption/nunjucks-inspect.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "eslint src/index.js && mocha",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-eslint": "^4.1.8",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "mocha": "^2.4.5",
+    "nunjucks": "^2.3.0",
+    "should": "^8.2.1"
+  },
+  "dependencies": {
+    "highlight.js": "^9.1.0",
+    "nunjucks": "^2.3.0"
+  }
+}
