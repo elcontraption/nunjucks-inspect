@@ -9,11 +9,11 @@ $ npm install nunjucks-inspect
 ## Setup
 
 ```js
-const InspectTag = require('nunjucks-inspect');
 const nunjucks = require('nunjucks');
+const NunjucksInspect = require('nunjucks-inspect');
 
 var env = new nunjucks.Environment();
-env.addExtension('inspect', new InspectTag());
+env.addExtension('inspect', new NunjucksInspect());
 ```
 
 ## Usage

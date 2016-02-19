@@ -1,6 +1,7 @@
+const cJSON = require('circular-json');
 const nunjucks = require('nunjucks');
 
-var Inspect = function () {
+function Inspect () {
     this.tags = ['inspect'];
 
     this.parse = function (parser, nodes, lexer) {
@@ -13,7 +14,7 @@ var Inspect = function () {
     };
 
     this.run = function (context, input, callback) {
-        return new nunjucks.runtime.SafeString('<pre><code>' + JSON.stringify(input, null, 2) + '</code></pre>');
+        return new nunjucks.runtime.SafeString('<pre><code>' + cJSON.stringify(input, null, 2) + '</code></pre>');
     };
 };
 
