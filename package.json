@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-inspect",
-  "description": "Adds `inspect` tag to Nunjucks to inspect an object's properties.",
+  "description": "An `inspect` tag for Nunjucks, to browse an object's properties.",
   "author": "Darin Reid <darin@elcontraption.com>",
   "license": "MIT",
   "version": "0.1.4",
