@@ -1,5 +1,5 @@
 # nunjucks-inspect
-An `inspect` tag for Nunjucks, to inspect an object's properties.
+An `inspect` tag for Nunjucks, to browse an object's properties.
 
 ## Installation
 ```sh
