@@ -14,7 +14,7 @@ function Inspect () {
     };
 
     this.run = function (context, input, callback) {
-        return new nunjucks.runtime.SafeString('<pre><code>' + cJSON.stringify(input, null, 2) + '</code></pre>');
+        return new nunjucks.runtime.SafeString('<pre class="nunjucks-inspect"><code>' + cJSON.stringify(input, null, 2) + '</code></pre>');
     };
 };
 
